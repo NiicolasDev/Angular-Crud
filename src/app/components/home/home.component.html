@@ -1,0 +1,72 @@
+
+
+<div class="container">
+    <!-- <p>Lista</p>
+    <button routerLink="/add" type="button" class="btn btn-dark mb-2">Agregar</button>
+    <table class="table table-hover table-dark table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Titulo Pelicula</th>
+            <th scope="col">Año</th>
+            <th scope="col">Duración</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Pais</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let movie of ListMovies">
+            <th>{{movie.mov_id}}</th>
+            <td>{{movie.mov_title}}</td>
+            <td>{{movie.mov_year}}</td>
+            <td>{{movie.mov_time}}</td>
+            <td>{{date(movie.mov_dt_rel)}}</td>
+            <td>{{movie.mov_rel_country}}</td>
+
+            <td>
+                <button (click)="modify(movie.mov_id)" type="button" class="btn btn-primary">Editar</button>
+            </td>
+            <td>
+                <button (click)="delet(movie.mov_id)" type="button" class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+        </tbody>
+      </table> -->
+    <button routerLink="/add" type="button" class="btn btn-dark mt-3 mb-3">Agregar</button>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Titulo Pelicula</th>
+            <th scope="col">Año</th>
+            <th scope="col">Duración</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Pais</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let movie of ListMovies">
+            <th>{{movie.mov_id}}</th>
+            <td>{{movie.mov_title}}</td>
+            <td>{{movie.mov_year}}</td>
+            <td>{{movie.mov_time}}</td>
+            <td>{{date(movie.mov_dt_rel)}}</td>
+            <td>{{movie.mov_rel_country}}</td>
+
+            <td>
+                <button (click)="modify(movie.mov_id)" type="button" class="btn btn-dark"><i class="fas fa-edit"></i></button>
+            </td>
+            <td>
+                <button (click)="delet(movie.mov_id)" type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+

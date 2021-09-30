@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://angular-crud-dos.herokuapp.com/home",
+        "secure": "false",
+        "logLevel":"debug"
+    }
+}

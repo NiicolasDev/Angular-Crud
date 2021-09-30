@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="container-text">
+    <p>Agregar Movie</p>
+  </div>
+  <div class="row">
+    <div class="col">
+      <form action="">
+        <label for="">Nombre de la pelicula</label>
+        <input [(ngModel)]="movie.mov_title" type="text" class="form-control" name="nombre">
+        <label for="">Año</label>
+        <input [(ngModel)]="movie.mov_year" type="number" min="1" max="4" maxlength="4" class="form-control" name="año">
+        <label for="">Duración de la pelicula</label>
+        <input [(ngModel)]="movie.mov_time" type="number" class="form-control" name="duraccion">
+        <label for="">Fecha</label>
+        <input [(ngModel)]="movie.mov_dt_rel" type="date" maxlength="2" class="form-control" name="Fecha">
+        <label for="">Pais</label>
+        <input [(ngModel)]="movie.mov_rel_country" type="text" maxlength="2" class="form-control" name="pais">
+        <button (click)="add()" class="btn btn-dark mt-3">Agregar Pelicula</button>
+      </form>
+    </div>
+  </div>
+</div>
